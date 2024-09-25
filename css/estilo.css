@@ -23,7 +23,7 @@ main, footer {
     border: 1px solid blue;
 }
 
-#displayCalculadora {
+#display {
     width: 100%;
     height: 80px;
     border-radius: 5px;
