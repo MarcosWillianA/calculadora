@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 100px;
+}
+
+main, footer {
+    min-width: 320px;
+    max-width: 640px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+#container {
+    width: 320px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+#displayCalculadora {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+}
+
+#teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 66.5px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 10px;
+    padding: 10px 0;
+    border: 1px solid orange;
+}
+
+.botaocalculadora {    
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+
+
+#zero {
+    grid-column: 1/3;
+}
+
+#igual {
+    height: 130px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: .6em;
+    text-indent: 1em;
+}
