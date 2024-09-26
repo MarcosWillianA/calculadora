@@ -1,15 +1,72 @@
 const display = document.getElementById('display');
+let numeroAnterior = null;
+let operador = null;
 
-function valor(valor) {
-    display.value += valor;
-    numero = display.value;
+let memoria = display.value;
 
-    if (numero.includes('.')) {
-        
-    } else {
-        console.log('Não tem ponto');
+// Botão dos números
+function digito (n) {    
+
+    if (n === ',' && display.value.includes(',')) {
+        return;
+    } 
+
+    display.value += n; 
+
+    // Limite de caracteres: 15
+    if (display.value.length > 15) {
+        display.value = display.value.substring(0, 15);
+        console.log('Não pode acrescentar mais de 15 caracteres!')
     }
+
+    return display.value;
 }
 
-//console.log(valor(55.2))
-console.log(valor())
+let numeroMostrado = display.value;
+
+// Limpeza e reset
+
+function limpar () {
+    display.value = '';
+}
+
+function apagar() {
+    display.value = display.value.slice(0, -1);
+}
+
+// Operações matemáticas (AGORA VEM O DESAFIO)
+
+function operacao (sinal) {
+
+    memoria = display.value; 
+
+
+    switch (sinal) {
+        case '+':
+        memoria += sinal;
+        display.value = '';
+        display.placeholder = memoria;
+        break;
+
+        case '-': 
+        memoria += sinal;
+        display.value = '';
+        display.placeholder = memoria;
+        break; 
+
+        case '*':
+        memoria += sinal;
+        display.value = '';
+        display.placeholder = memoria;
+        break;
+
+        case '/':
+        memoria += sinal;
+        display.value = '';
+        display.placeholder = memoria;
+        break;
+    }  
+
+    console.log(memoria);
+}
+

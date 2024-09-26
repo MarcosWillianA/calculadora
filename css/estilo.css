@@ -28,9 +28,13 @@ main, footer {
     height: 80px;
     border-radius: 5px;
     padding: 10px;
-    overflow-x: hidden;
-    font-size: 3em;
+    overflow: hidden;
+    font-size: 2em;
     text-align: right;
+}
+
+#display::placeholder {
+    color: black;
 }
 
 #teclas {

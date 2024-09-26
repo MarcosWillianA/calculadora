@@ -10,26 +10,26 @@
     <main>
         <section>
             <div id="container">
-                <input type="text" name="display" id="display" placeholder="0" readonly><br>
+                <input type="text" name="display" id="display" maxlength="15" placeholder="0" readonly><br>
                 <div id="teclas">
-                    <input type="button" value="CE" class="botaocalculadora" id="cancelEntry" onclick="calcular('operacao', 'ce')">
-                    <input type="button" value="C" class="botaocalculadora" id="clear" onclick="calcular('operacao', 'c')">
-                    <input type="button" value="X" class="botaocalculadora" id="multiplicacao" onclick="calcular('operacao', '*')">
-                    <input type="button" value="&divide" class="botaocalculadora" id="divisao" onclick="calcular('operacao', '/')">
-                    <input type="button" value="7" class="botaocalculadora" id="sete" onclick="valor(7)">
-                    <input type="button" value="8" class="botaocalculadora" id="oito" onclick="valor(8)">
-                    <input type="button" value="9" class="botaocalculadora" id="nove" onclick="valor(9)">
-                    <input type="button" value="+" class="botaocalculadora" id="soma" onclick="calcular('operacao', '+')">
-                    <input type="button" value="4" class="botaocalculadora" id="quatro" onclick="valor(4)">
-                    <input type="button" value="5" class="botaocalculadora" id="cinco" onclick="valor(5)">
-                    <input type="button" value="6" class="botaocalculadora" id="seis" onclick="valor(6)">
-                    <input type="button" value="-" class="botaocalculadora" id="subtracao" onclick="calcular('operacao', '-')">
-                    <input type="button" value="1" class="botaocalculadora" id="um" onclick="valor(1)">
-                    <input type="button" value="2" class="botaocalculadora" id="dois" onclick="valor(2)">
-                    <input type="button" value="3" class="botaocalculadora" id="tres" onclick="valor(3)">
-                    <input type="button" value="=" class="botaocalculadora" id="igual" onclick="calcular('operacao', '==')">
-                    <input type="button" value="0" class="botaocalculadora" id="zero" onclick="valor(0)">
-                    <input type="button" value="," class="botaocalculadora" id="virgula" onclick="valor('.')">
+                    <input type="button" value="CE" class="botaocalculadora" id="cancelentry" onclick="apagar()">
+                    <input type="button" value="C" class="botaocalculadora" id="clear" onclick="limpar()">
+                    <input type="button" value="X" class="botaocalculadora" id="multiplicacao" onclick="operacao('*')">
+                    <input type="button" value="&divide" class="botaocalculadora" id="divisao" onclick="operacao('/')">
+                    <input type="button" value="7" class="botaocalculadora" id="sete" onclick="digito(7)">
+                    <input type="button" value="8" class="botaocalculadora" id="oito" onclick="digito(8)">
+                    <input type="button" value="9" class="botaocalculadora" id="nove" onclick="digito(9)">
+                    <input type="button" value="+" class="botaocalculadora" id="soma" onclick="operacao('+')">
+                    <input type="button" value="4" class="botaocalculadora" id="quatro" onclick="digito(4)">
+                    <input type="button" value="5" class="botaocalculadora" id="cinco" onclick="digito(5)">
+                    <input type="button" value="6" class="botaocalculadora" id="seis" onclick="digito(6)">
+                    <input type="button" value="-" class="botaocalculadora" id="subtracao" onclick="operacao('-')">
+                    <input type="button" value="1" class="botaocalculadora" id="um" onclick="digito(1)">
+                    <input type="button" value="2" class="botaocalculadora" id="dois" onclick="digito(2)">
+                    <input type="button" value="3" class="botaocalculadora" id="tres" onclick="digito(3)">
+                    <input type="button" value="=" class="botaocalculadora" id="igual">
+                    <input type="button" value="0" class="botaocalculadora" id="zero" onclick="digito(0)">
+                    <input type="button" value="," class="botaocalculadora" id="virgula" onclick="digito(',')">
                 </div>
             </div>
         </section>
